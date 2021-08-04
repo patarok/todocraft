@@ -1,0 +1,4 @@
+{% macro imgUrl(img, transformation = null) %}
+{% set i = img ? img.one() : null %}
+{% if i %}{{ transformation ? i.getUrl(transformation) : i.url }}{% else %}https://unsplash.com/photos/_oP5ErcnVXE/download?w=640{% endif %}
+{% endmacro %}

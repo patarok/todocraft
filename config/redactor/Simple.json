@@ -1,0 +1,12 @@
+{
+  "buttons": [
+    "html",
+    "bold",
+    "italic"
+  ],
+  "plugins": [
+    "fullscreen",
+    "counter"
+  ],
+  "toolbarFixed": true
+}

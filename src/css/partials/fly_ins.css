@@ -1,0 +1,67 @@
+.centerInMain {
+    left: 34%;
+    right: 34%;
+}
+
+.centerInMainIR {
+right: 0px !important;
+margin-left: 34%;
+margin-right: 34%;
+}
+
+.centerInMainIR_ {
+    right: 0px !important;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.centerInMainIL {
+left: 0px !important;
+margin-left: 34%;
+margin-right: 34%;
+}
+
+.centerInMainIL_ {
+    left: 0px !important;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.flying{
+-webkit-transition: 1.85s cubic-bezier(0.001, 0.995, 1.000, 1.000);
+    -moz-transition: 1.85s cubic-bezier(0.001, 0.995, 1.000, 1.000);
+    -o-transition: 1.85s cubic-bezier(0.001, 0.995, 1.000, 1.000);
+    transition: 1.85s cubic-bezier(0.001, 0.995, 1.000, 1.000);}
+
+.flyInR{
+right: 0px !important;
+}
+
+
+
+.flyOutR{
+right: -8000px;
+left: unset;
+}
+
+.flyInL{
+left: 0px !important;
+}
+
+.flyOutL{
+left: -8000px;
+right: unset;
+}
+
+
+._p_top-40{
+    top: 40%;
+}
+
+._p_top-10{
+    top: 10%;
+}
+
+._m_top-20{
+    margin-top: 20%;
+}

@@ -1,0 +1,8 @@
+handle: landingPage
+hasTitleField: false
+name: 'Landing Page'
+section: e530e4e3-303c-49cb-bb5a-273451d49e09 # Landing Page
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,21 @@
+{% set centered = block.options.contains('centered') %}
+{% set split = block.options.contains('split') %}
+{% set bgGray = block.backgroundColor.value == 'gray' %}
+
+<div class="{{ blockClass }} {{ split ? 'split' }} {{ bgGray ? 'background' }}">
+    <div class="container">
+
+        <div class="{{ centered ? 'centered' }}">
+            {% if block.headline %}
+                <div class="block-headline">
+                    {{ block.headline }}
+                </div>
+            {% endif %}
+
+            <div class="editor-content">
+                {{ block.text }}
+            </div>
+        </div>
+
+    </div>
+</div>

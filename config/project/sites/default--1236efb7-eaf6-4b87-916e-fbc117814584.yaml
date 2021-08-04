@@ -1,0 +1,9 @@
+baseUrl: $ROOT_URL
+enabled: true
+handle: default
+hasUrls: true
+language: de-DE
+name: TodoApp
+primary: true
+siteGroup: 74a484e0-25e3-43aa-be78-c5d9b3a01228 # Buwog
+sortOrder: 1

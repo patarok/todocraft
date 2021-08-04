@@ -1,0 +1,9 @@
+format: jpg
+handle: fullWidth
+height: null
+interlace: none
+mode: crop
+name: 'Full Width'
+position: center-center
+quality: 82
+width: 1280

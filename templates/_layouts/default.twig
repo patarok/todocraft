@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="{{ siteUrl }}">
+    {% include "_partials/favicon" %}
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="TodoApp, Tailwind, CraftCMS, Alpine.JS">
+    <title> TodoApp </title>
+	<link rel="stylesheet" href="{{ rev('/css/styles.css') }}">
+{#    <script  src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+             ></script>#}
+</head>
+<body class="font-sans" style="overflow-x: hidden;">
+
+<div class="w-full">
+{#    <header class="md:min-w-full">
+    {% include "_partials/head_nav" %}
+    </header>#}
+    <main>
+    {% block mainContent %}
+
+    {#the main content#}
+
+    {% endblock %}
+
+    </main>
+
+    <footer>
+    {% include "_partials/footer" %}
+    </footer>
+
+    <script src="{{ rev('/js/app.js') }}"></script>
+
+</div>
+</body>
+</html>

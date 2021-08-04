@@ -1,0 +1,36 @@
+.transition-all{
+	transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 2500ms !important;
+}
+
+.animate {
+    @apply transform;
+    @apply transition-all;
+    @apply duration-700;
+    opacity: 0;
+}
+
+.animate.right {
+    @apply -translate-x-1/2;
+}
+
+.animate.left {
+    @apply translate-x-1/2;
+}
+
+.animate.active {
+    @apply translate-x-0;
+    opacity: 1;
+}
+
+.fillable{
+    fill: transparent;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms !important;
+}
+
+.fill{
+    fill: #94c11f;
+}

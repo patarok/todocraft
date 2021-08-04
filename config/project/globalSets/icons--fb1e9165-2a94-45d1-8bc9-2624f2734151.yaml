@@ -1,0 +1,27 @@
+fieldLayouts:
+  ebd93ff8-9588-40f4-8594-80e282cabb6d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5b89b235-af16-497d-8476-5aefc204097c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c460e2fa-e183-4b72-ad2b-d50923361553
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Overlays
+        sortOrder: 1
+handle: icons
+name: 'Icons and Overlays'

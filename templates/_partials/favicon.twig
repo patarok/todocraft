@@ -1,0 +1,47 @@
+{# requires global with handle 'icon' containing asset field with handle 'faviconFile' #}
+{# v2 #}
+{% cache globally %}
+    {% set sizesIcon = [192, 48, 32, 16] %}
+    {% set sizesAppleTouch = [180] %}
+    {% if icon is defined and icon['faviconFile'] is defined and icon.faviconFile.exists() and icon.faviconFile.one().kind == 'image' %}
+        {# link icon #}
+        {% for faviconSize in sizesIcon %}
+            {% set icon = icon.faviconFile.one() %}
+            {% set shorterEdge = icon.width > icon.height ? icon.height : icon.width %}
+            {% if shorterEdge >= faviconSize %}
+                {% set faviconTransform = {
+                    width: faviconSize,
+                    height: faviconSize,
+                    quality: 100,
+                    position: 'center-center',
+                    format: 'png',
+                } %}
+                {{tag('link', {
+                    rel: 'icon',
+                    sizes: faviconSize~'x'~faviconSize,
+                    type: 'image/png',
+                    href: icon.getUrl(faviconTransform),
+                }) }}
+            {% endif %}
+        {% endfor %}
+        {# link touch icon #}
+        {% for faviconSize in sizesAppleTouch %}
+            {% set icon = icon.faviconFile.one() %}
+            {% set shorterEdge = icon.width > icon.height ? icon.height : icon.width %}
+            {% if shorterEdge >= faviconSize %}
+                {% set faviconTransform = {
+                    width: faviconSize,
+                    height: faviconSize,
+                    quality: 100,
+                    position: 'center-center',
+                    format: 'png',
+                } %}
+                {{tag('link', {
+                    rel: 'apple-touch-icon',
+                    sizes: faviconSize~'x'~faviconSize,
+                    href: icon.getUrl(faviconTransform),
+                }) }}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endcache %}

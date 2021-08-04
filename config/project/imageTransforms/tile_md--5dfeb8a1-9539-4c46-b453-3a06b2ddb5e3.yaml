@@ -1,0 +1,9 @@
+format: jpg
+handle: tile_md
+height: null
+interlace: none
+mode: crop
+name: 'Tile - medium'
+position: center-center
+quality: null
+width: 512

@@ -1,0 +1,29 @@
+{% if block.table|length %}
+    <div class="{{ blockClass }} background">
+        <div class="container">
+
+            {% if block.headline %}
+                <div class="block-headline">
+                    {{ block.headline }}
+                </div>
+            {% endif %}
+
+            <div class="grid grid-cols-2 auto-rows-fr gap-4">
+                {% for row in block.table %}
+                    <div class="flex flex-col">
+                        <div class="text-white bg-blue bg-opacity-40 leading-tight
+                                    p-2">
+                            {{ row.headline }}
+                        </div>
+                        <div class="flex-grow bg-white p-2">
+                            <div class="w-8/10">
+                                {{ row.text }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+{% endif %}

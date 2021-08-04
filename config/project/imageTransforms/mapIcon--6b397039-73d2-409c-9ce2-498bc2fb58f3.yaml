@@ -1,0 +1,9 @@
+format: png
+handle: mapIcon
+height: 30
+interlace: none
+mode: crop
+name: 'Map Icon'
+position: center-center
+quality: null
+width: null

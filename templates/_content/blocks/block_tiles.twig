@@ -1,0 +1,56 @@
+<div class="{{ blockClass }} background">
+    <div class="container">
+
+        {% if block.headline %}
+            <div class="block-headline text-center text-blue
+                        mx-auto
+                        w-2/3 mb-4
+                        lg:w-5/10
+                        xl:w-5/10">
+                {{ block.headline }}
+            </div>
+        {% endif %}
+
+        {% if block.tiles|length %}
+            <div class="grid gap-2
+                        grid-cols-2
+                        lg:grid-cols-4">
+                {% for tile in block.tiles.all() %}
+                    <div class="relative bg-white pt-full">
+                        <div class="absolute inset-0
+                                    flex flex-col justify-center items-center
+                                    p-6">
+                            <img class="w-full h-20 object-contain"
+                                 src="{{ tile.tileImage.one().url }}"
+                                 alt="{{ tile.displayName }}">
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+{#        {% set contentBuilderBlocks = craft.matrixBlocks()#}
+{#            .field('contentBuilder')#}
+{#            .type('tiles')#}
+{#            .all()#}
+{#        %}#}
+
+{#        {% if contentBuilderBlocks|length %}#}
+{#            <div class="border">#}
+{#                <div>#}
+{#                    count: {{ contentBuilderBlocks|length }}#}
+{#                </div>#}
+
+{#                {% for block in contentBuilderBlocks %}#}
+{#                    <div>#}
+{#                        <a href="{{ block.owner.url }}">#}
+{#                            {{ block.owner.title }}#}
+{#                        </a>#}
+{#                        ({{ block.owner.type }}) - {{ block.type }}#}
+{#                    </div>#}
+{#                {% endfor %}#}
+{#            </div>#}
+{#        {% endif %}#}
+
+    </div>
+</div>

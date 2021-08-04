@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: landingPage
+name: 'Landing Page'
+propagationMethod: all
+siteSettings:
+  1236efb7-eaf6-4b87-916e-fbc117814584: # TodoApp
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/landing_page
+    uriFormat: __home__
+type: single

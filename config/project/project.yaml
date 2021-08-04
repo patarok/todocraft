@@ -1,0 +1,148 @@
+dateModified: 1628073925
+email:
+  fromEmail: p.patoschka@pc-web.at
+  fromName: Buwog
+  replyToEmail: null
+  template: null
+  transportSettings:
+    encryptionMethod: ''
+    host: mail
+    password: ''
+    port: '25'
+    timeout: '10'
+    useAuthentication: ''
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
+plugins:
+  anchors:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  concierge:
+    edition: standard
+    enabled: true
+    licenseKey: 9CKK2LEDYQM7A1SSAFTEA8AV
+    schemaVersion: 1.0.0
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: 'On behalf of A_TEST'
+      prependSubject: 'New message from Buwog'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: patoschkapeter@gmail.com
+  express-forms:
+    edition: lite
+    enabled: true
+    schemaVersion: 1.0.1
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      cpSectionEnabled: '1'
+  google-maps:
+    edition: standard
+    enabled: true
+    licenseKey: BIKU3IRIJGRYQS4RJJ45RT6N
+    schemaVersion: 4.0.0
+    settings:
+      browserKey: $GOOGLE_API_CLIENT_KEY
+      enableJsLogging: true
+      fieldControlSize: 27
+      geolocationService: ''
+      ipstackApiAccessKey: ''
+      maxmindLicenseKey: ''
+      maxmindService: ''
+      maxmindUserId: ''
+      serverKey: $GOOGLE_API_KEY
+  google-recaptcha:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: M6QVB9HO5DM4JM536S8V6H5V
+    schemaVersion: 1.0.21
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  redactor-anchors:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
+  redactor-custom-styles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  retour:
+    edition: standard
+    enabled: true
+    licenseKey: LQ8IBXKNFI2G2BVA26N9I1ZU
+    schemaVersion: 3.0.10
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: B0SCHBLPTDNU7D8ESLLPJPYE
+    schemaVersion: 3.0.10
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      generatorEnabled: true
+      headersEnabled: true
+      lowercaseCanonicalUrl: '1'
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 'null'
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+system:
+  edition: solo
+  live: true
+  name: Buwog
+  retryDuration: null
+  schemaVersion: 3.6.8
+  timeZone: Europe/Vienna
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

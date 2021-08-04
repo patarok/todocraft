@@ -1,0 +1,27 @@
+fieldLayouts:
+  4c30d86b-b8e9-4f95-8eed-be442a3015be:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1b66432b-cbab-4077-8e0f-b142097be708
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 05379b7f-2da8-4b40-9f85-b47ed090b04b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'External Pasties'
+        sortOrder: 1
+handle: head
+name: Head

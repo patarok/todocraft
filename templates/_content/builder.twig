@@ -1,0 +1,40 @@
+{#{% set contentBlocks = entry.contentBuilder#}
+{#    .with([#}
+{#        'images:images',#}
+{#        'imagesText:images'#}
+{#    ])#}
+{#    .all()#}
+{#%}#}
+
+{% set contentBlocks = entry.contentBuilder
+    .all()
+%}
+
+{% if contentBlocks|length %}
+
+    <div class="content-builder">
+
+        {# Erstes bild soll kein lazyLoading haben#}
+        {#{% set lazyImage = false %}#}
+
+        {% set blockPrefix = blockPrefix is defined ? blockPrefix : '' %}
+
+        {% for block in contentBlocks %}
+
+            {% set blockName = block.type.handle %}
+            {% set blockTemplate = '_content/blocks/' ~ blockPrefix ~ 'block_' ~ blockName %}
+            {% set blockClass = 'content-block' ~ ' block-' ~ blockName|kebab %}
+
+            {% include blockTemplate ignore missing %}
+
+            {#     Optional: Alle nach dem ersten Bild sollen lazy loading sein#}
+        {#    {% if block.type.handle == "image" %}#}
+        {#        {% set lazyImage = true %}#}
+        {#    {% endif %}#}
+
+
+        {% endfor %}
+
+    </div>
+
+{% endif %}
